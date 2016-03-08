@@ -2,6 +2,7 @@
 
 To start your Phoenix app:
 
+	0. Install NPM modules with `npm install`
   1. Install dependencies with `mix deps.get`
   2. Start Phoenix endpoint with `mix phoenix.server`
 

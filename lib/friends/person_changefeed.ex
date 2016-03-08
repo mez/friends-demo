@@ -1,6 +1,5 @@
 defmodule Friends.PersonChangefeed do
   use RethinkDB.Changefeed
-
   require Logger
 
   import RethinkDB.Query

@@ -17,7 +17,7 @@ defmodule Friends.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Friends, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :sasl, :rethinkdb]]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :sasl, :rethinkdb, :rethinkdb_changefeed]]
   end
 
   # Specifies which paths to compile per environment.
@@ -33,7 +33,8 @@ defmodule Friends.Mixfile do
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},
-     {:rethinkdb, github: "hamiltop/rethinkdb-elixir"},
+     {:rethinkdb, "~> 0.4.0"},
+     {:rethinkdb_changefeed, "~> 0.0.1"},
      {:exrm, "~> 0.19"}
      ]
   end
